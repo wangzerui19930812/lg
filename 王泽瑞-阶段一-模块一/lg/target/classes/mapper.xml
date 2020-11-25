@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<mapper namespace="com.lg.mybatis.bean.User">
+    <select id="selectOne" paramterType="com.lg.mybatis.bean.User" resultType="com.lg.mybatis.bean.User">
+        select * from user where id = #{id} and name = #{name}
+    </select>
+
+    <select id="selectList" paramterType="com.lg.mybatis.bean.User" resultType="com.lg.mybatis.bean.User">
+        select * from user
+        <where>
+            <if  test="id!=0">
+                and id = #{id}
+            </if>
+        </where>
+    </select>
+</mapper>

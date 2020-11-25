@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuration>
+    <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+    <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/lg?useCharactorEncoding=utf-8&amp;serverTimezone=UTC"></property>
+    <property name="username" value="root"></property>
+    <property name="password" value="futuredream"></property>
+    <mapper resource="mapper.xml"></mapper>
+</configuration>
